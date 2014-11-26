@@ -1,0 +1,6 @@
+recursive-include doc
+recursive-include maltfy.i3visio-entities
+include README.md
+include MANIFEST
+include COPYING
+include ez_setup.py
