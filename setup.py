@@ -15,7 +15,7 @@ except ImportError:
 	read_md = lambda f: open(f, 'r').read()
 
 setup(	name="maltfy",
-	version="v0.3.0",
+	version="v0.3.1",
 	description="maltfy - maltfy is a library for performing certain automated tasks using i3visio OSINT tools with Maltego.",
 	author="Felix Brezo and Yaiza Rubio",
 	author_email="contacto@i3visio.com",

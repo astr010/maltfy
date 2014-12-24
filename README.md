@@ -32,15 +32,43 @@ The installation under Python 2.7 for the release package is as follows:
 
 1.- Download and install Maltego (Community Edition is free)
 
-2.- Run Maltego and Create an account.
+2.- Run Maltego. It is not necessary to create an account.
 
-3.- Install usufy, entify, apify and maltfy running the following commands in 
-each folder:
+3.- We recommend to install the app under a specific folder to let Maltego find the
+transforms without further configuration. The installation under a Linux system with 
+a folder '/var/i3visio' (in Windows, it should be 'C:/i3visio') already created is
+as follows:
 ```
+# Navigate to the folder
+cd /var/i3visio
+git clone http://github.com/i3visio/maltfy
+cd maltfy-master
+sudo python setup.py build
 sudo python setup.py install
 ```
+or
+```
+# Navigate to the folder
+cd /var/i3visio
+wget http://github.com/i3visio/maltfy/archive/master.zip
+unzip maltfy-master.zip
+cd master
+sudo python setup.py build
+sudo python setup.py install
+```
+Superuser privileges are required so as to complete the installation. Afterwards, 
+the module will be importable from any python code. You can check this by typing:
+```
+python -c "import maltfy"
+```
+If no error is displayed, the installation would have been performed correctly.
 
-4.- Import the i3visio configuration from the maltfy/maltfy/i3visio-configuration.
+4.- Import the i3visio configuration from the maltfy-master/maltfy/i3visio-configuration.
 
-5.- Update the Working directory of the loaded transforms to match the appropriate 
-directory.
+5.- Update the Working directory of the loaded transforms if necessary to match the 
+appropriate directory. By default it can be found under:
+    - Linux:    /var/i3visio/maltfy-master/maltfy 
+    - Windows:  c:/i3visio/maltfy-master/maltfy
+
+
+

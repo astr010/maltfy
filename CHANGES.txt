@@ -1,6 +1,10 @@
 For more information, check the README.md in http://github.com/i3visio/maltfy
 
-v0.3.0, 2014/11/23 -- Importtant update to fit the changes performed.
+v0.3.1, 2014/12/24 -- i3visio.alias standarization.
+	- In emailToSkypeAccounts transform the i3visio.alias fields are now attached as fields of the i3visio.profile entity created.
+	- Changes on the installation instructions.
+
+v0.3.0, 2014/11/23 -- Important update to fit the changes performed.
 	- Refactoring to look for the 3rd party bundling API in i3visiotools library.
 
 v0.2.0, 2014/10/14 -- Entities and transforms added.
@@ -14,4 +18,6 @@ v0.1.0, 2014/10/12 -- Initial release.
 
 [TO-DO]
 Bitcoin Address:
-	- Add a transform bitcoinAddressToTransactions
+	- Add a transform bitcoinAddressToTransactions.
+	- Add a transform bitcoinTransactionToAddresses.
+Add a Litecoin Address entity.

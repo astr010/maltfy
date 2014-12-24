@@ -40,24 +40,18 @@ def emailToSkypeAccount(query=None):
 	#print json.dumps(entities, indent=2)
 	for user in jsonData:
 		newEnt = me.addEntity("i3visio.profile","skype://" + str(user["i3visio.alias"]))
-		aliasEnt = me.addEntity("i3visio.alias",user["i3visio.alias"])
+		# From v0.3.1 and ongoing versions, the i3visio.alias is not created directly but appended to the profile.
+		#aliasEnt = me.addEntity("i3visio.alias",user["i3visio.alias"])
 
 		newEnt.setDisplayInformation("<h3>" + user["i3visio.alias"] +"</h3><p>");# + json.dumps(user, sort_keys=True, indent=2) + "!</p>");
 		for field in user.keys():
-			if field != "i3visio.alias":
-				# [TO-DO] Appending all the information from the json:
-				if field == "i3visio.aliases":
-					listAliases = [user["i3visio.alias"]]
-					listAliases += user[field]
-					# in this case, this is a list
-					for alias in user[field]:
-						aliasEnt = me.addEntity("i3visio.alias",alias.encode('utf-8'))
-				elif user[field] != None:
-					try:
-						newEnt.addAdditionalFields(field,field,True,str(user[field]).encode('utf-8'))
-					except:
-						# Something passed...
-						pass
+			# [TO-DO] Appending all the information from the json:
+			if user[field] != None:
+				try:
+					newEnt.addAdditionalFields(field,field,True,str(user[field]).encode('utf-8'))
+				except:
+					# Something passed...
+					pass
 
 	# Returning the output text...
 	me.returnOutput()
