@@ -4,11 +4,11 @@
 
 Description:
 ============
-maltfy is a GPLv3 piece of software conceived to export i3visio OSINT tools to 
+maltfy is a GPLv3+ piece of software conceived to export i3visio OSINT tools to 
 Maltego.
 
-License: GPLv3
-==============
+License: GPLv3+
+===============
 
 This is free software, and you are welcome to redistribute it under certain conditions.
 

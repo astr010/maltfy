@@ -15,7 +15,7 @@ except ImportError:
 	read_md = lambda f: open(f, 'r').read()
 
 setup(	name="maltfy",
-	version="v0.3.1",
+	version="v0.3.2",
 	description="maltfy - maltfy is a library for performing certain automated tasks using i3visio OSINT tools with Maltego.",
 	author="Felix Brezo and Yaiza Rubio",
 	author_email="contacto@i3visio.com",
@@ -25,9 +25,9 @@ setup(	name="maltfy",
 	long_description=read_md("README.md"),
 #	long_description=open('README.md').read(),
 	install_requires=[
-		"usufy",
-		"entify",
-		"i3visiotools",
+		"usufy >= 2.0.1",
+		"entify >= 0.4.0",
+		"i3visiotools >= 0.2.2",
 #	"pypandoc",
 	],
 )

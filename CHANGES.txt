@@ -1,23 +1,27 @@
 For more information, check the README.md in http://github.com/i3visio/maltfy
 
+v0.3.2, 2014/12/26 -- Updates on the entities.
+- Added entities for Litecoin.
+- Added entities for Dogecoin.
+- Updated icons for Bitcoin, Litecoin and Dogecoin.
+
 v0.3.1, 2014/12/24 -- i3visio.alias standarization.
-	- In emailToSkypeAccounts transform the i3visio.alias fields are now attached as fields of the i3visio.profile entity created.
-	- Changes on the installation instructions.
+- In emailToSkypeAccounts transform the i3visio.alias fields are now attached as fields of the i3visio.profile entity created.
+- Changes on the installation instructions.
 
 v0.3.0, 2014/11/23 -- Important update to fit the changes performed.
-	- Refactoring to look for the 3rd party bundling API in i3visiotools library.
+- Refactoring to look for the 3rd party bundling API in i3visiotools library.
 
 v0.2.0, 2014/10/14 -- Entities and transforms added.
-	- External APIinclusion: haveibeenpwned.com, blockchain.info, md5crack.com
-	- Entity extraction: entify.py entities included such as md5, sha1, sha256, DNI, email or Bitcoin addresses.
+- External APIinclusion: haveibeenpwned.com, blockchain.info, md5crack.com
+- Entity extraction: entify.py entities included such as md5, sha1, sha256, DNI, email or Bitcoin addresses.
 
 v0.1.0, 2014/10/12 -- Initial release.
-	- Some entities created.
-	- Support for performing usufy searches.
+- Some entities created.
+- Support for performing usufy searches.
 
 
 [TO-DO]
 Bitcoin Address:
 	- Add a transform bitcoinAddressToTransactions.
 	- Add a transform bitcoinTransactionToAddresses.
-Add a Litecoin Address entity.
